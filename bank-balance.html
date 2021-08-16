@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank Balance</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 class="mt-16 text-5xl text-center">
+        Let's get some <span class="text-blue-600">Moooney!!!</span>
+      </h1>
+    </header>
+    <main class="w-3/4 mx-auto">
+      <section class="mt-12">
+        <div class="grid grid-cols-3 gap-4 text-white">
+          <div class="bg-green-400 p-8 rounded shadow-xl">
+            <h3 class="text-2xl mb-2 font-semibold">Deposit</h3>
+            <h4 class="text-4xl font-bold">
+              $<span id="deposit-total">00</span>
+            </h4>
+          </div>
+          <div class="bg-red-400 p-8 rounded shadow-xl">
+            <h3 class="text-2xl mb-2 font-semibold">Withdraw</h3>
+            <h4 class="text-4xl font-bold">$<span id="withdraw-total">00</span></h4>
+          </div>
+          <div class="bg-blue-400 p-8 rounded shadow-xl">
+            <h3 class="text-2xl mb-2 font-semibold">Balance</h3>
+            <h4 class="text-4xl font-bold">
+              $<span id="balance-total">1250</span>
+            </h4>
+          </div>
+        </div>
+      </section>
+      <!-- deposit and withdraw -->
+      <section class="mt-8">
+        <div class="grid grid-cols-2 gap-4">
+          <div class="bg-green-200 p-8 rounded">
+            <h3 class="text-2xl mb-4">Please Deposit</h3>
+            <input
+              class="block w-3/4 mb-4 p-2 rounded border"
+              type="text"
+              placeholder="Please Enter Your Amount"
+              id="diposit-amount"
+            />
+            <button
+              class="bg-gray-500 py-2 px-8 rounded font-semibold text-white"
+              id="diposit-btn"
+            >
+              Diposit
+            </button>
+          </div>
+          <div class="bg-green-200 p-8 rounded">
+            <h3 class="text-2xl mb-4">Please Withdraw</h3>
+            <input
+              class="block w-3/4 mb-4 p-2 rounded border"
+              type="text"
+              placeholder="Please Enter Your Amount"
+              id="withdraw-amount"
+            />
+            <button
+              class="bg-gray-500 py-2 px-8 rounded font-semibold text-white"
+              id="withdraw-btn"
+            >
+              Withdraw
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- <script src="main.js"></script> -->
+    <script src="bank-balance.js"></script>
+  </body>
+</html>
